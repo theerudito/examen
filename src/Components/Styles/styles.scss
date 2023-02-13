@@ -53,7 +53,6 @@ $textTransform: uppercase;
     align-items: $align-items;
     color: $color;
   }
-
   .containerSearch {
     display: $display;
     justify-content: $justify-content;
@@ -69,7 +68,6 @@ $textTransform: uppercase;
       }
     }
   }
-
   .listPokemon {
     display: $display;
     justify-content: $justify-content;
@@ -78,13 +76,12 @@ $textTransform: uppercase;
     padding: $paddingApp;
     color: $color;
   }
-
   .containerControls {
     display: $display;
     justify-content: $justify-content;
     align-items: $align-items;
   }
-
+  
   .ContainerPokemon {
     @media screen and (max-width: 320px) {
       background-color: $backgrondApp;

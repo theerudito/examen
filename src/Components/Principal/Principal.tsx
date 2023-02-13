@@ -20,7 +20,6 @@ export const Principal = (props: any) => {
   const AllPokemons = async () => {
     try {
       const recivedPokemons = await GetPokemons(limit);
-
       setTimeout(() => {
         setPokemon(recivedPokemons as []);
       }, 1000);
