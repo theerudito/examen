@@ -1,0 +1,755 @@
+// STYLE PAGE
+// VARIABLES
+$backgrondApp: #191919;
+$marginApp: 0px;
+$paddingApp: 0px;
+$box-sizingApp: border-box;
+$borderApp: none;
+$heightApp: 100%;
+$widthApp: 100%;
+$color: #fff;
+
+html {
+  background-color: $backgrondApp;
+  margin: $marginApp;
+  padding: $paddingApp;
+  box-sizing: $box-sizingApp;
+  border: $borderApp;
+  height: $heightApp;
+  width: $widthApp;
+}
+// STYLE PAGE
+
+$margin: auto;
+$padding: 0px;
+$box-sizing: border-box;
+$border: none;
+$border-radius: 10px;
+$justify-content: center;
+$align-items: center;
+$display: flex;
+$width: 100%;
+$height: 100%;
+$color: #fff;
+$list-item: none;
+$gap: 10px;
+$left: 0;
+$top: 0;
+$right: 0;
+$bottom: 0;
+$position: absolute;
+$background-color1: #384b6b;
+$background-color2: #2a3d5a;
+$textTransform: uppercase;
+
+.containerPrincipal {
+  background-color: $backgrondApp;
+  width: $widthApp;
+  height: $heightApp;
+
+  .Title {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    color: $color;
+  }
+
+  .containerSearch {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    input {
+      background-color: bisque;
+      border: $border;
+      border-radius: $border-radius;
+      margin: 5px;
+      padding: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .listPokemon {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    font-size: 40px;
+    padding: $paddingApp;
+    color: $color;
+  }
+
+  .containerControls {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+
+  .ContainerPokemon {
+    @media screen and (max-width: 320px) {
+      background-color: $backgrondApp;
+      display: grid;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      grid-template-columns: auto;
+      height: $heightApp;
+      width: $widthApp;
+      gap: $gap;
+      margin: 10px 0px 0px 0px;
+
+      .containderCard {
+        background-color: $background-color1;
+        border-radius: $border-radius;
+        width: 200px;
+        height: auto;
+
+        &:hover {
+          background-color: $background-color2;
+        }
+
+        .ContainerImage {
+          display: $display;
+          justify-content: $justify-content;
+          align-items: $align-items;
+          img {
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .containerInfo {
+          display: grid;
+          justify-content: $justify-content;
+          align-items: $align-items;
+
+          p {
+            color: $color;
+            display: $display;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            margin: $marginApp;
+            text-transform: $textTransform;
+          }
+          .titleType {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+          .titleStart {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+
+          .containerStart {
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            p {
+              color: $color;
+              margin-left: 10px;
+              text-transform: $textTransform;
+              font-size: 14px;
+              margin: 0;
+              padding-left: 5px;
+            }
+          }
+
+          .containerType {
+            display: $display;
+            gap: $gap;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            height: 35px;
+            margin: $marginApp;
+            background-color: purple;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 375px) {
+      background-color: $backgrondApp;
+      display: grid;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      grid-template-columns: auto;
+      height: $heightApp;
+      width: $widthApp;
+      gap: $gap;
+      margin: 10px 0px 0px 0px;
+
+      .containderCard {
+        background-color: $background-color1;
+        border-radius: $border-radius;
+        width: 200px;
+        height: auto;
+
+        &:hover {
+          background-color: $background-color2;
+        }
+
+        .ContainerImage {
+          display: $display;
+          justify-content: $justify-content;
+          align-items: $align-items;
+          img {
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .containerInfo {
+          display: grid;
+          justify-content: $justify-content;
+          align-items: $align-items;
+
+          p {
+            color: $color;
+            display: $display;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            margin: $marginApp;
+            text-transform: $textTransform;
+          }
+          .titleType {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+          .titleStart {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+
+          .containerStart {
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            p {
+              color: $color;
+              margin-left: 10px;
+              text-transform: $textTransform;
+              font-size: 14px;
+              margin: 0;
+              padding-left: 5px;
+            }
+          }
+
+          .containerType {
+            display: $display;
+            gap: $gap;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            height: 35px;
+            margin: $marginApp;
+            background-color: purple;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 425px) {
+      background-color: $backgrondApp;
+      display: grid;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      grid-template-columns: auto auto;
+      height: $heightApp;
+      width: $widthApp;
+      gap: $gap;
+      margin: 10px 0px 0px 0px;
+
+      .containderCard {
+        background-color: $background-color1;
+        border-radius: $border-radius;
+        width: 200px;
+        height: auto;
+
+        &:hover {
+          background-color: $background-color2;
+        }
+
+        .ContainerImage {
+          display: $display;
+          justify-content: $justify-content;
+          align-items: $align-items;
+          img {
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .containerInfo {
+          display: grid;
+          justify-content: $justify-content;
+          align-items: $align-items;
+
+          p {
+            color: $color;
+            display: $display;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            margin: $marginApp;
+            text-transform: $textTransform;
+          }
+          .titleType {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+          .titleStart {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+
+          .containerStart {
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            p {
+              color: $color;
+              margin-left: 10px;
+              text-transform: $textTransform;
+              font-size: 14px;
+              margin: 0;
+              padding-left: 5px;
+            }
+          }
+
+          .containerType {
+            display: $display;
+            gap: $gap;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            height: 35px;
+            margin: $marginApp;
+            background-color: purple;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      background-color: $backgrondApp;
+      display: grid;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      grid-template-columns: auto auto auto;
+      height: $heightApp;
+      width: $widthApp;
+      gap: $gap;
+      margin: 10px 0px 0px 0px;
+
+      .containderCard {
+        background-color: $background-color1;
+        border-radius: $border-radius;
+        width: 200px;
+        height: auto;
+
+        &:hover {
+          background-color: $background-color2;
+        }
+
+        .ContainerImage {
+          display: $display;
+          justify-content: $justify-content;
+          align-items: $align-items;
+          img {
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .containerInfo {
+          display: grid;
+          justify-content: $justify-content;
+          align-items: $align-items;
+
+          p {
+            color: $color;
+            display: $display;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            margin: $marginApp;
+            text-transform: $textTransform;
+          }
+          .titleType {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+          .titleStart {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+
+          .containerStart {
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            p {
+              color: $color;
+              margin-left: 10px;
+              text-transform: $textTransform;
+              font-size: 14px;
+              margin: 0;
+              padding-left: 5px;
+            }
+          }
+
+          .containerType {
+            display: $display;
+            gap: $gap;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            height: 35px;
+            margin: $marginApp;
+            background-color: purple;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      background-color: $backgrondApp;
+      display: grid;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      grid-template-columns: auto auto auto auto auto auto;
+      height: $heightApp;
+      width: $widthApp;
+      gap: $gap;
+      margin: 10px 0px 0px 0px;
+
+      .containderCard {
+        background-color: $background-color1;
+        border-radius: $border-radius;
+        width: 200px;
+        height: auto;
+
+        &:hover {
+          background-color: $background-color2;
+        }
+
+        .ContainerImage {
+          display: $display;
+          justify-content: $justify-content;
+          align-items: $align-items;
+          img {
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .containerInfo {
+          display: grid;
+          justify-content: $justify-content;
+          align-items: $align-items;
+
+          p {
+            color: $color;
+            display: $display;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            margin: $marginApp;
+            text-transform: $textTransform;
+          }
+          .titleType {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+          .titleStart {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+
+          .containerStart {
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            p {
+              color: $color;
+              margin-left: 10px;
+              text-transform: $textTransform;
+              font-size: 14px;
+              margin: 0;
+              padding-left: 5px;
+            }
+          }
+
+          .containerType {
+            display: $display;
+            gap: $gap;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            height: 35px;
+            margin: $marginApp;
+            background-color: purple;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 1440px) {
+      background-color: $backgrondApp;
+      display: grid;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      grid-template-columns: auto auto auto auto auto auto;
+      height: $heightApp;
+      width: $widthApp;
+      gap: $gap;
+      margin: 10px 0px 0px 0px;
+
+      .containderCard {
+        background-color: $background-color1;
+        border-radius: $border-radius;
+        width: 200px;
+        height: auto;
+
+        &:hover {
+          background-color: $background-color2;
+        }
+
+        .ContainerImage {
+          display: $display;
+          justify-content: $justify-content;
+          align-items: $align-items;
+          img {
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .containerInfo {
+          display: grid;
+          justify-content: $justify-content;
+          align-items: $align-items;
+
+          p {
+            color: $color;
+            display: $display;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            margin: $marginApp;
+            text-transform: $textTransform;
+          }
+          .titleType {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+          .titleStart {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+
+          .containerStart {
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            p {
+              color: $color;
+              margin-left: 10px;
+              text-transform: $textTransform;
+              font-size: 14px;
+              margin: 0;
+              padding-left: 5px;
+            }
+          }
+
+          .containerType {
+            display: $display;
+            gap: $gap;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            height: 35px;
+            margin: $marginApp;
+            background-color: purple;
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 2560px) {
+      background-color: $backgrondApp;
+      display: grid;
+      justify-content: $justify-content;
+      align-items: $align-items;
+      grid-template-columns: auto auto auto auto auto auto;
+      height: $heightApp;
+      width: $widthApp;
+      gap: $gap;
+      margin: 10px 0px 0px 0px;
+
+      .containderCard {
+        background-color: $background-color1;
+        border-radius: $border-radius;
+        width: 200px;
+        height: auto;
+
+        &:hover {
+          background-color: $background-color2;
+        }
+
+        .ContainerImage {
+          display: $display;
+          justify-content: $justify-content;
+          align-items: $align-items;
+          img {
+            max-height: 100px;
+            min-height: 100px;
+            max-width: 100px;
+            min-width: 100px;
+            object-fit: contain;
+          }
+        }
+
+        .containerInfo {
+          display: grid;
+          justify-content: $justify-content;
+          align-items: $align-items;
+
+          p {
+            color: $color;
+            display: $display;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            margin: $marginApp;
+            text-transform: $textTransform;
+          }
+          .titleType {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+          .titleStart {
+            margin: 10px;
+            background-color: #191919;
+            border-radius: $border-radius;
+            padding: 5px;
+            height: 35px;
+            p {
+              color: aqua;
+            }
+          }
+
+          .containerStart {
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            p {
+              color: $color;
+              margin-left: 10px;
+              text-transform: $textTransform;
+              font-size: 14px;
+              margin: 0;
+              padding-left: 5px;
+            }
+          }
+
+          .containerType {
+            display: $display;
+            gap: $gap;
+            justify-content: $justify-content;
+            align-items: $align-items;
+            border-radius: $border-radius;
+            border: 1px solid silver;
+            height: 35px;
+            margin: $marginApp;
+            background-color: purple;
+          }
+        }
+      }
+    }
+  }
+}
