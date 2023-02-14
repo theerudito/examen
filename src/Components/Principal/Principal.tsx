@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { GetPokemons } from "../Helpers/APi";
-import Loader from "..//Resources/riple.svg";
+import Loader from "../Resources/riple.svg";
 import "react-loading-skeleton/dist/skeleton.css";
 
 export const Principal = (props: any) => {
